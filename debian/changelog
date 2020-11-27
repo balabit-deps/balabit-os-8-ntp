@@ -1,3 +1,12 @@
+ntp (1:4.2.8p12+dfsg-3ubuntu4.20.04.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Null dereference attack in mode 6 packet (LP: #1891953)
+    - debian/patches/CVE-2019-8936.patch: Guard against operations
+      on NULL pointer in ntpd/ntp_control.c.
+    - CVE-2019-8936
+
+ -- Brian Morton <rokclimb15@gmail.com>  Fri, 27 Nov 2020 16:10:51 -0500
+
 ntp (1:4.2.8p12+dfsg-3ubuntu4) focal; urgency=medium
 
   [ Bernhard Schmidt ]
